@@ -1,0 +1,356 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #bc4662;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: 'roboto', sans-serif;
+  --secondary-font: 'quicksand', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+  font-family: 'Yellowtail', cursive;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  line-height: 3rem;
+}
+
+h4 {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+.book-food-text h2 {
+  color: var(--white-color);
+}
+
+/* header design */
+
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-top: 0px;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--white-color);
+  letter-spacing: 1px;
+}
+
+/* change navbar styling on scroll */
+.navigation-wrap .scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+  transition: all 0.15s ease-in-out 0s;
+}
+
+/* top banner */
+
+.top-banner {
+  width: 100%;
+  background: url('../images/img/plates.jpg') no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+}
+
+.title {
+  width: 550px;
+  height: 500px;
+  letter-spacing: 1px;
+  background-color: black;
+  opacity: 0.9;
+  padding: 70px;
+  border: solid;
+  border-radius: 20px;
+  border-color: black;
+  font-family: 'Yellowtail', cursive;
+}
+
+/* about section */
+
+.about-section {
+  background-color: rgb(211, 204, 204, 100%);
+  padding-top: 40px;
+}
+
+.about-section .card,
+.about-section .card img {
+  background-color: rgb(211, 204, 204, 100%);
+  width: 700px;
+  height: 700px;
+  padding-left: 50px;
+}
+
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+
+/* menu */
+.menu .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9375rem;
+}
+.menu .card img {
+  border-radius: 0.9375rem;
+  object-fit: cover;
+}
+.menu .card span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #eee;
+}
+.menu .card span del {
+  color: var(--text-gray);
+  margin-left: 0.5rem;
+}
+
+.sect {
+  width: 100%;
+  background: url('../images/img/abtbg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* contact us */
+
+.contact {
+  padding-top: 70px;
+}
+
+.col-md-7 {
+  padding: 50px;
+}
+.col-md-5 {
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  padding: 30px;
+  color: white;
+}
+.form-control {
+  height: 52px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-radius: 2px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bi {
+  font-size: 20px;
+}
+.d-flex p {
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+  }
+}
+
+h4.white {
+  padding-top: 30px;
+  color: white;
+  font-weight: 550;
+  font-size: 40px;
+}
+
+p.white {
+  color: white;
+}
+
+/* footer */
+
+footer {
+  background-color: #000;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+  margin-top: 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: #000;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footernav {
+  margin: 20px 0;
+}
+.footernav ul {
+  display: flex;
+  justify-content: center;
+}
